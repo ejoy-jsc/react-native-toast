@@ -1,9 +1,9 @@
 # React Native Toast (remobile)
-A android like toast for react-native support for ios and android
+Toast message popup for Android and Ios
 
 ## Installation
-```sh
-npm install @remobile/react-native-toast --save
+```
+npm install ejoy-toast --save
 ```
 
 ### Installation (iOS)
@@ -12,44 +12,9 @@ npm install @remobile/react-native-toast --save
 * Look for Header Search Paths and make sure it contains both $(SRCROOT)/../../../react-native/React as recursive.
 
 ### Installation (Android)
-```gradle
-...
-include ':react-native-toast'
-project(':react-native-toast').projectDir = new File(settingsDir, '../node_modules/@remobile/react-native-toast/android')
-```
+From version 2, Android Version implement from `ToastAndroid` API. So, this do not necessary for native linking in Android
 
-* In `android/app/build.gradle`
 
-```gradle
-...
-dependencies {
-    ...
-    compile project(':react-native-toast')
-}
-```
-
-* register module (in MainApplication.java)
-
-```java
-......
-import com.remobile.toast.RCTToastPackage;  // <--- import
-
-......
-
-@Override
-protected List<ReactPackage> getPackages() {
-   ......
-   new RCTToastPackage(),            // <------ add here
-   ......
-}
-
-```
-```
-
-### Screencasts
-![ios](https://github.com/remobile/react-native-toast/blob/master/screencasts/ios.gif)
-
-## Usage
 
 ### Example
 ```js
