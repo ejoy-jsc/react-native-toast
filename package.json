@@ -1,6 +1,6 @@
 {
     "name": "ejoy-toast",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Toast message popup for Android and Ios",
     "main": "index.js",
     "author": {
